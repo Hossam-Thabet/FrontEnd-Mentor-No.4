@@ -1,12 +1,100 @@
 /* Fonts */
+@font-face {
+   font-family: "Inter";
+   src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
 
 /* Roots */
 
+:root {
+   --clr-green: hsl(75, 94%, 57%);
+   --clr-grey-700: hsl(0, 0%, 20%);
+   --clr-grey-800: hsl(0, 0%, 12%);
+   --clr-grey-900: hsl(0, 0%, 8%);
+}
+
 /* Reset */
+
+*, *::before, *::after {
+   box-sizing: border-box;
+ }
+   
+ * {
+   margin: 0;
+ }
+ 
+ body {
+   line-height: 1.5;
+   letter-spacing: 0;
+   -webkit-font-smoothing: antialiased;
+ }
+   
+ img, picture, video, canvas, svg {
+   display: block;
+   max-width: 100%;
+ }
+   
+ input, button, textarea, select {
+   font: inherit;
+ }
+   
+ p, h1, h2, h3, h4, h5, h6 {
+   overflow-wrap: break-word;
+ }
+   
+ h1, h2, h3, h4, h5, h6 {
+   text-wrap: balance;
+ }
 
 /* Style */
 
+body {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  background-color: var(--clr-grey-900);
+}
 
+main {
+  padding: 2rem;
+  background-color: var(--clr-grey-800);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile img {
+
+}
+
+.profile__title {
+
+}
+
+.profile__place {
+
+}
+
+.profile__job {
+
+}
+
+
+.grid-group {
+   display: grid;
+
+}
+.grid-group a {
+   display: block;
+   text-decoration: none;
+   cursor: url("./assets/images/heart.png");
+   text-align: center;
+   background-color: var(--clr-grey-700);
+}
 
 
 
@@ -16,6 +104,10 @@
 
 .attribution {
    font-size: .75rem; text-align: center; 
+   position: absolute;
+   bottom:20px;
+   left:0;
+   right:0;
 }
 
 .attribution a {
