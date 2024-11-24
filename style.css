@@ -11,6 +11,10 @@
    --clr-grey-700: hsl(0, 0%, 20%);
    --clr-grey-800: hsl(0, 0%, 12%);
    --clr-grey-900: hsl(0, 0%, 8%);
+
+   --wgt-400: 400;
+   --wgt-600: 600;
+   --wgt-700: 700;
 }
 
 /* Reset */
@@ -55,38 +59,57 @@ body {
   position: relative;
   height: 100vh;
   background-color: var(--clr-grey-900);
+  font-family: inter , sans-serif;
 }
 
 main {
-  padding: 2rem;
+  width: 327px;
   background-color: var(--clr-grey-800);
+  border-radius: 0.75rem;
 }
 
 .profile {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
 }
 
 .profile img {
-
+  border-radius: 50%;
+  width: 5.5em;
 }
 
 .profile__title {
-
+  color: white;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: var(--wgt-600);
 }
 
 .profile__place {
-
+  color: var(--clr-green);
+  font-size:0.875rem;
+  font-weight: var(--wgt-600);
+  margin-top: 0.25rem;
 }
 
 .profile__job {
-
+  color: white;
+  font-size: .875rem;
+  margin-top: 1.5rem;
+  font-weight: var(--wgt-400);
 }
 
 
 .grid-group {
    display: grid;
-
+   width: 100%;
+   font-size: 0.875rem;
+   font-weight: var(--wgt-600);
+   margin-top: 1.5rem;
+   gap: .75rem;
+   
 }
 .grid-group a {
    display: block;
@@ -94,6 +117,9 @@ main {
    cursor: url("./assets/images/heart.png");
    text-align: center;
    background-color: var(--clr-grey-700);
+   color: white;
+   padding: .75rem 0;
+   border-radius: 0.5rem;
 }
 
 
