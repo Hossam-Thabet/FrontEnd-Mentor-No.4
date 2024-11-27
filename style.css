@@ -68,11 +68,23 @@ main {
   border-radius: 0.75rem;
 }
 
+@media (min-width:1440px) {
+  main {
+    width: 384px;
+  }
+}
+
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
+}
+
+@media (min-width:1440px) {
+  .profile {
+    padding: 2.5rem 2rem;
+  }
 }
 
 .profile img {
@@ -82,7 +94,7 @@ main {
 
 .profile__title {
   color: white;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   font-size: 1.5rem;
   font-weight: var(--wgt-600);
 }
@@ -109,7 +121,12 @@ main {
    font-weight: var(--wgt-600);
    margin-top: 1.5rem;
    gap: .75rem;
-   
+}
+
+@media (min-width:1440px) {
+  .grid-group {
+    gap: 1rem;
+  }
 }
 .grid-group a {
    display: block;
